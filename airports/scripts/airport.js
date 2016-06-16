@@ -149,7 +149,6 @@ function testfunction(d,i){
     dataset = dataset.slice(0,Math.min(20, dataset.length));
     
     updateBars();
-    dumpDataset();
 }
 
 //   ------------  bars  ------------
@@ -192,15 +191,6 @@ svg1.append("g").attr("class", "xaxis axis")
 	.call(xAxis);
 svg1.append("g").attr("class", "yaxis axis").call(yAxis);
 
-
-c3 = d3.select("#chart3");
-
-svg3 = c3.append("svg")
-	.attr("width", barConfig.width)
-	.attr("height", barConfig.height)
-	.append("g")
-	.attr("transform", "translate(" + barConfig.leftMargin + "," + barConfig.topMargin + ")")
-	;
 
 function dumpDataset()
 {
