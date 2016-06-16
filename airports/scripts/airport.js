@@ -137,7 +137,7 @@ function dumpdata(d,i) {
 function testfunction(d,i){
     var iata_text;
     iata_text = d.iata;
-    document.getElementById("clabel2").textContent = "Airport Selected: " + iata_text;
+    document.getElementById("clabel2").textContent = "Top 20 Outgoing Airports of: " + iata_text;
     
     dataset = [];
     

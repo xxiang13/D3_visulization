@@ -27,11 +27,15 @@
   pointer-events: none;
 }
 
+.airports circle: hover {
+  fill: #FF6633;
+}
+
 .airport:hover .airport-arcs {
   display: inline;
 }
 
-svg:not(:hover) .airport-cell {
+/*svg:not(:hover) .airport-cell {
   stroke: #000;
   stroke-opacity: .2;
-}
+}*/

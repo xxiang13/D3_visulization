@@ -1,30 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Bargraph Progression</title>
-	<meta name="description" content="D3 Tutorial Template">
-	<meta name="author" content="Northwestern University">
-	
-	<link rel="stylesheet" href="CSS/reset.css">
-	<link rel="stylesheet" href="CSS/bargraph.css">
-    <link rel="stylesheet" href="CSS/airport.css">
-	
-    <script src="scripts/d3.min.js"></script>
-    <script src="scripts/topojson.js"></script>
-    <script src="scripts/queue.js"></script>
-	<script defer src="scripts/airport.js"></script>
-	
-</head>
+<!DOCTYPE HTML>
 
-<body>
-	<div id="toptextcontainer"><h1>US Airport Connection</h1></div>
-	<p id="clabel1">US Airport</p>
-	<div id="chart1" class="defaultchart"> </div>
-	<p id="clabel2">Top 20 Connected Airports</p>
-	<div id="chart2" class="defaultchart"> </div>
+<html>
+	<head>
+		<title>Xiang Li | D3 Airport Visualization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Xiang Li">
+        <meta name="description" content="D3 Airport">
 
-</body>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/bargraph.css">
+        <link rel="stylesheet" href="css/airport.css">
+		<link rel="stylesheet" href="/assets/css/main_projects.css" />
+        
+        <script src="scripts/d3.min.js"></script>
+        <script src="scripts/topojson.js"></script>
+        <script src="scripts/queue.js"></script>
+        <script defer src="scripts/airport.js"></script>
+        
+        
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Xiang Li</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="scripts.html">Scripts</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Airport Connection Interactive Visualization</h1>
+								<p>This interactive visualization shows US airports in a map and flights between them. You can click one airport to see the top 20 outgoing airports of it in the bar chart interavtively.</p>
+							</header>
+						</div>
+                        
+                        <div class="inner">
+                                <p id="clabel1"><Strong>US Airport Connection</Strong></p>
+                                <div id="chart1" class="defaultchart"> </div>
+                                <p id="clabel2">Top 20 Connected Airports</p>
+                                <div id="chart2" class="defaultchart"> </div>
+                        </div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/xxiang13" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/xiangshawnli" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Xiang Li 2016. All rights reserved</li><li>Design: HTML5 UP</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main_project.js"></script>
+
+	</body>
 </html>
-
